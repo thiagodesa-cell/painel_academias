@@ -30,13 +30,19 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# --- Conteúdo do App ---
+# --- Conteúdo do App (Menu Lateral) ---
 st.sidebar.title("🔥 Menu de Treinos")
 dias_semana = [
     "Segunda-feira", "Terça-feira", "Quarta-feira", 
     "Quinta-feira", "Sexta-feira", "Sábado", "Domingo"
 ]
 dia_escolhido = st.sidebar.selectbox("Escolha o Dia:", dias_semana)
+
+# --- Assinatura no Menu Lateral ---
+st.sidebar.markdown("---")
+st.sidebar.markdown("### 👨‍💻 Sobre o Desenvolvedor")
+st.sidebar.markdown("**Desenvolvido por:** Thiago de Sá")
+st.sidebar.markdown("📧 thiago.desa@yahoo.com.br")
 
 st.title("💪 Meu App de Treinos")
 st.write("Séries completas de segunda a domingo na palma da mão")
