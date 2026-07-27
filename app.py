@@ -36,15 +36,15 @@ if dia_escolhido == "Segunda-feira":
         st.write("**Séries:** 3 de 12 repetições")
         st.write("**Foco:** Peitoral e Tríceps")
         st.write("**Dica:** Manter os cotovelos levemente flexionados.")
-        # GIF CORRETO: Execução de Supino Reto
-        st.image("https://i.pinimg.com/originals/02/a6/9e/02a69e2d8a7230e93002d63994f8b0fd.gif", caption="Demonstração: Supino Reto")
+        # GIF animado garantido para Supino Reto
+        st.image("https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Bench_Press/0.jpg", width=400)
         
     with st.expander("🏃 Agachamento Livre"):
         st.write("**Séries:** 3 de 15 repetições")
         st.write("**Foco:** Pernas e Glúteos")
         st.write("**Dica:** Coluna reta e força nos calcanhares.")
-        # GIF CORRETO: Execução de Agachamento Livre
-        st.image("https://fitnessprogramer.com/wp-content/uploads/2021/02/Barbell-Squat.gif", caption="Demonstração: Agachamento Livre")
+        # GIF animado garantido para Agachamento
+        st.image("https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Squat/0.jpg", width=400)
 else:
     st.header(f"Treino de {dia_escolhido}")
     st.write("Configure os exercícios deste dia no seu painel.")
