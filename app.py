@@ -7,10 +7,9 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# --- CSS com força máxima para a setinha ficar branca ---
+# --- CSS para destacar a setinha ---
 st.markdown("""
     <style>
-        /* Força a cor do ícone e dos traços da setinha da sidebar para branco */
         [data-testid="collapsedControl"] svg, 
         [data-testid="collapsedControl"] svg path {
             fill: white !important;
@@ -37,13 +36,15 @@ if dia_escolhido == "Segunda-feira":
         st.write("**Séries:** 3 de 12 repetições")
         st.write("**Foco:** Peitoral e Tríceps")
         st.write("**Dica:** Manter os cotovelos levemente flexionados.")
-        st.image("https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=400", caption="Supino Reto")
+        # GIF animado de Supino Reto
+        st.image("https://media.giphy.com/media/l0HlHFRbmaZtBRhXG/giphy.gif", caption="Demonstração: Supino Reto")
         
     with st.expander("🏃 Agachamento Livre"):
         st.write("**Séries:** 3 de 15 repetições")
         st.write("**Foco:** Pernas e Glúteos")
         st.write("**Dica:** Coluna reta e força nos calcanhares.")
-        st.image("https://media.giphy.com/media/l0HlHFRbmaZtBRhXG/giphy.gif", caption="Agachamento (Exemplo Animado)")
+        # GIF animado de Agachamento Livre
+        st.image("https://media.giphy.com/media/3o7TKSjRrfIPjeiVyM/giphy.gif", caption="Demonstração: Agachamento Livre")
 else:
     st.header(f"Treino de {dia_escolhido}")
     st.write("Configure os exercícios deste dia no seu painel.")
