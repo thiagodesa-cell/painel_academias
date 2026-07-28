@@ -72,7 +72,7 @@ if dia_escolhido == "Segunda-feira":
     
     with st.expander("🏋️ 1. Supino Reto com Halteres"):
         st.markdown('<div class="badge-card">⚡ Séries: 4x 10-12 reps | Foco: Peitoral e Tríceps</div>', unsafe_allow_html=True)
-        st.video("https://www.w3schools.com/html/mov_bbb.mp4")
+        st.video("https://www.w3schools.com/html/mov_bbb.mp4") # Substitua por link do exercício real
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -83,7 +83,7 @@ if dia_escolhido == "Segunda-feira":
         
     with st.expander("🔥 2. Tríceps Pulley"):
         st.markdown('<div class="badge-card">⚡ Séries: 4x 12 reps | Foco: Tríceps</div>', unsafe_allow_html=True)
-        st.video("https://www.w3schools.com/html/mov_bbb.mp4")
+        st.video("https://www.w3schools.com/html/mov_bbb.mp4") # Substitua por link do exercício real
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
