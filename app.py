@@ -37,14 +37,12 @@ if dia_escolhido == "Segunda-feira":
         st.write("**Séries:** 3 de 12 repetições")
         st.write("**Foco:** Peitoral e Tríceps")
         st.write("**Dica:** Manter os cotovelos levemente flexionados.")
-        # Exemplo com foto normal
         st.image("https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=400", caption="Supino Reto")
         
     with st.expander("🏃 Agachamento Livre"):
         st.write("**Séries:** 3 de 15 repetições")
         st.write("**Foco:** Pernas e Glúteos")
         st.write("**Dica:** Coluna reta e força nos calcanhares.")
-        # Exemplo com GIF animado (basta colocar o link de um GIF válido aqui)
         st.image("https://media.giphy.com/media/l0HlHFRbmaZtBRhXG/giphy.gif", caption="Agachamento (Exemplo Animado)")
 else:
     st.header(f"Treino de {dia_escolhido}")
