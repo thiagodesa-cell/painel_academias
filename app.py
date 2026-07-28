@@ -54,7 +54,7 @@ st.sidebar.markdown("📧 thiago.deasa@yahoo.com.br")
 st.title("💪 Meu App de Treinos")
 st.write("Séries completas de segunda a domingo na palma da mão")
 
-# --- Lógica de Exibição por Dia da Semana ---
+# --- Lógica de Exibição por Dia da Semana (Usando arquivos locais do GitHub) ---
 
 if dia_escolhido == "Segunda-feira":
     st.header("💥 Segunda-feira: Peito e Tríceps")
@@ -62,6 +62,7 @@ if dia_escolhido == "Segunda-feira":
     with st.expander("🏋️ 1. Supino Reto com Halteres"):
         st.write("**Séries:** 4x 10-12 reps")
         st.write("**Foco:** Peitoral e Tríceps")
+        st.image("supino.gif", width=320)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -73,6 +74,7 @@ if dia_escolhido == "Segunda-feira":
     with st.expander("🔥 2. Tríceps Pulley"):
         st.write("**Séries:** 4x 12 reps")
         st.write("**Foco:** Tríceps")
+        st.image("triceps.gif", width=320)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -87,6 +89,7 @@ elif dia_escolhido == "Terça-feira":
     with st.expander("🏋️ 1. Agachamento Livre"):
         st.write("**Séries:** 4x 8-10 reps")
         st.write("**Foco:** Pernas e Glúteos")
+        st.image("agachamento.gif", width=320)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -98,6 +101,7 @@ elif dia_escolhido == "Terça-feira":
     with st.expander("🔥 2. Cadeira Extensora"):
         st.write("**Séries:** 3x 12 reps")
         st.write("**Foco:** Quadríceps")
+        st.image("extensora.gif", width=320)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -112,6 +116,7 @@ elif dia_escolhido == "Quarta-feira":
     with st.expander("🏋️ 1. Puxada Alta Frontal"):
         st.write("**Séries:** 4x 10 reps")
         st.write("**Foco:** Dorsal e Bíceps")
+        st.image("puxada.gif", width=320)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -123,6 +128,7 @@ elif dia_escolhido == "Quarta-feira":
     with st.expander("🔥 2. Rosca Direta"):
         st.write("**Séries:** 4x 12 reps")
         st.write("**Foco:** Bíceps")
+        st.image("rosca.gif", width=320)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -137,6 +143,7 @@ elif dia_escolhido == "Quinta-feira":
     with st.expander("🏋️ 1. Desenvolvimento com Halteres"):
         st.write("**Séries:** 4x 12 reps")
         st.write("**Foco:** Ombros")
+        st.image("desenvolvimento.gif", width=320)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -148,6 +155,7 @@ elif dia_escolhido == "Quinta-feira":
     with st.expander("🔥 2. Prancha Abdominal"):
         st.write("**Séries:** 3x 45 segundos")
         st.write("**Foco:** Core")
+        st.image("prancha.gif", width=320)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -162,6 +170,7 @@ elif dia_escolhido == "Sexta-feira":
     with st.expander("🏋️ 1. Stiff com Barra"):
         st.write("**Séries:** 4x 10 reps")
         st.write("**Foco:** Posterior e Glúteos")
+        st.image("stiff.gif", width=320)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -173,6 +182,7 @@ elif dia_escolhido == "Sexta-feira":
     with st.expander("🔥 2. Cadeira Flexora"):
         st.write("**Séries:** 3x 12 reps")
         st.write("**Foco:** Posterior de coxa")
+        st.image("flexora.gif", width=320)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -187,6 +197,7 @@ elif dia_escolhido == "Sábado":
     with st.expander("🏃 1. Burpees"):
         st.write("**Séries:** 4x 45 segundos")
         st.write("**Foco:** Condicionamento")
+        st.image("burpee.gif", width=320)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -198,6 +209,7 @@ elif dia_escolhido == "Sábado":
     with st.expander("🔥 2. Pular Corda"):
         st.write("**Séries:** 4x 1 minuto")
         st.write("**Foco:** Resistência")
+        st.image("corda.gif", width=320)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -212,6 +224,7 @@ elif dia_escolhido == "Domingo":
     with st.expander("🧘 1. Alongamento Global"):
         st.write("**Duração:** 15-20 minutos")
         st.write("**Foco:** Soltura muscular")
+        st.image("alongamento.gif", width=320)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -223,6 +236,7 @@ elif dia_escolhido == "Domingo":
     with st.expander("🚶 2. Caminhada Leve"):
         st.write("**Duração:** 30 minutos")
         st.write("**Foco:** Descanso ativo")
+        st.image("caminhada.gif", width=320)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
