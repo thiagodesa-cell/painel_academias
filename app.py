@@ -65,30 +65,28 @@ st.sidebar.markdown("📧 thiago.deasa@yahoo.com.br")
 st.title("💪 Meu App de Treinos")
 st.write("Séries completas de segunda a domingo na palma da mão")
 
-# --- Lógica de Exibição por Dia da Semana com Vídeos do YouTube ---
+# --- Lógica de Exibição por Dia da Semana ---
 
 if dia_escolhido == "Segunda-feira":
     st.header("💥 Segunda-feira: Peito e Tríceps")
     
     with st.expander("🏋️ 1. Supino Reto com Halteres"):
         st.markdown('<div class="badge-card">⚡ Séries: 4x 10-12 reps | Foco: Peitoral e Tríceps</div>', unsafe_allow_html=True)
-        st.video("https://www.youtube.com/watch?v=VmB1G1K7v94")
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução</h4>
-                <p>🔹 Deite-se no banco, segure os halteres na linha do peito.</p>
-                <p>🔹 Empurre para cima contraindo o peitoral e desça controlando o movimento.</p>
+                <h4>🎯 Execução Correta</h4>
+                <p>🔹 Deite-se firmemente no banco, segurando os halteres na linha do peito.</p>
+                <p>🔹 Empurre para cima contraindo o peitoral e desça controlando bem o movimento.</p>
             </div>
         """, unsafe_allow_html=True)
         
     with st.expander("🔥 2. Tríceps Pulley"):
         st.markdown('<div class="badge-card">⚡ Séries: 4x 12 reps | Foco: Tríceps</div>', unsafe_allow_html=True)
-        st.video("https://www.youtube.com/watch?v=2-LAMcpzODU")
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução</h4>
-                <p>🔹 Mantenha os cotovelos fixos colados ao lado do corpo.</p>
-                <p>🔹 Estique os braços para baixo fazendo força total no tríceps.</p>
+                <h4>🎯 Execução Correta</h4>
+                <p>🔹 Mantenha os cotovelos fixos e colados ao lado do corpo.</p>
+                <p>🔹 Estique os braços para baixo fazendo força total no tríceps, sem balançar o tronco.</p>
             </div>
         """, unsafe_allow_html=True)
 
@@ -97,23 +95,21 @@ elif dia_escolhido == "Terça-feira":
     
     with st.expander("🏋️ 1. Agachamento Livre"):
         st.markdown('<div class="badge-card">⚡ Séries: 4x 8-10 reps | Foco: Pernas e Glúteos</div>', unsafe_allow_html=True)
-        st.video("https://www.youtube.com/watch?v=U3h3ZjjkW6Q")
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução</h4>
-                <p>🔹 Pés na largura dos ombros, coluna reta e abdômen contraído.</p>
-                <p>🔹 Desça o quadril jogando para trás e suba forçando os calcanhares.</p>
+                <h4>🎯 Execução Correta</h4>
+                <p>🔹 Posicione os pés na largura dos ombros, mantenha a coluna reta e o abdômen contraído.</p>
+                <p>🔹 Desça o quadril projetando para trás e suba forçando a base dos calcanhares.</p>
             </div>
         """, unsafe_allow_html=True)
         
     with st.expander("🔥 2. Cadeira Extensora"):
         st.markdown('<div class="badge-card">⚡ Séries: 3x 12 reps | Foco: Quadríceps</div>', unsafe_allow_html=True)
-        st.video("https://www.youtube.com/watch?v=YyvSfVjQeL0")
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução</h4>
-                <p>🔹 Sente-se com o apoio ajustado na altura da canela.</p>
-                <p>🔹 Estenda completamente as pernas e retorne devagar.</p>
+                <h4>🎯 Execução Correta</h4>
+                <p>🔹 Sente-se com o apoio ajustado exatamente na altura da canela.</p>
+                <p>🔹 Estenda completamente as pernas em cima e retorne controlando o peso devagar.</p>
             </div>
         """, unsafe_allow_html=True)
 
@@ -122,23 +118,21 @@ elif dia_escolhido == "Quarta-feira":
     
     with st.expander("🏋️ 1. Puxada Alta Frontal"):
         st.markdown('<div class="badge-card">⚡ Séries: 4x 10 reps | Foco: Dorsal e Bíceps</div>', unsafe_allow_html=True)
-        st.video("https://www.youtube.com/watch?v=CAwf7n6Luuc")
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução</h4>
+                <h4>🎯 Execução Correta</h4>
                 <p>🔹 Segure a barra com pegada aberta e estufe bem o peito.</p>
-                <p>🔹 Puxe a barra em direção à clavícula fechando as costas.</p>
+                <p>🔹 Puxe a barra em direção à clavícula fechando bem as costas.</p>
             </div>
         """, unsafe_allow_html=True)
         
     with st.expander("🔥 2. Rosca Direta"):
         st.markdown('<div class="badge-card">⚡ Séries: 4x 12 reps | Foco: Bíceps</div>', unsafe_allow_html=True)
-        st.video("https://www.youtube.com/watch?v=ykJmrZ5v0Oo")
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução</h4>
-                <p>🔹 Mantenha o corpo firme sem balançar o tronco.</p>
-                <p>🔹 Flexione os cotovelos trazendo o peso na direção do peito.</p>
+                <h4>🎯 Execução Correta</h4>
+                <p>🔹 Mantenha o corpo firme sem balançar o tronco ou usar impulso.</p>
+                <p>🔹 Flexione os cotovelos trazendo o peso na direção do peito de forma controlada.</p>
             </div>
         """, unsafe_allow_html=True)
 
@@ -147,23 +141,21 @@ elif dia_escolhido == "Quinta-feira":
     
     with st.expander("🏋️ 1. Desenvolvimento com Halteres"):
         st.markdown('<div class="badge-card">⚡ Séries: 4x 12 reps | Foco: Ombros</div>', unsafe_allow_html=True)
-        st.video("https://www.youtube.com/watch?v=qEwKCR5JCog")
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução</h4>
-                <p>🔹 Segure os halteres na altura dos ombros sentado no banco.</p>
-                <p>🔹 Empurre para cima até quase unirem acima da cabeça.</p>
+                <h4>🎯 Execução Correta</h4>
+                <p>🔹 Segure os halteres na altura dos ombros sentado no banco com apoio.</p>
+                <p>🔹 Empurre para cima até quase unirem acima da cabeça sem travar os cotovelos.</p>
             </div>
         """, unsafe_allow_html=True)
         
     with st.expander("🔥 2. Prancha Abdominal"):
         st.markdown('<div class="badge-card">⚡ Séries: 3x 45 segundos | Foco: Core</div>', unsafe_allow_html=True)
-        st.video("https://www.youtube.com/watch?v=ASdvN_XEl_c")
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução</h4>
-                <p>🔹 Apoie os antebraços no chão mantendo o corpo reto.</p>
-                <p>🔹 Contraia o abdômen rigidamente durante todo o tempo.</p>
+                <h4>🎯 Execução Correta</h4>
+                <p>🔹 Apoie os antebraços no chão mantendo o corpo totalmente alinhado e reto.</p>
+                <p>🔹 Contraia o abdômen rigidamente durante todo o tempo de execução.</p>
             </div>
         """, unsafe_allow_html=True)
 
@@ -172,23 +164,21 @@ elif dia_escolhido == "Sexta-feira":
     
     with st.expander("🏋️ 1. Stiff com Barra"):
         st.markdown('<div class="badge-card">⚡ Séries: 4x 10 reps | Foco: Posterior e Glúteos</div>', unsafe_allow_html=True)
-        st.video("https://www.youtube.com/watch?v=1uDiWBUblvk")
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução</h4>
-                <p>🔹 Joelhos semi-flexionados, empurre o quadril para trás.</p>
-                <p>🔹 Sinta o posterior alongar e retorne contraindo os glúteos.</p>
+                <h4>🎯 Execução Correta</h4>
+                <p>🔹 Joelhos semi-flexionados, empurre o quadril para trás mantendo a coluna neutra.</p>
+                <p>🔹 Sinta o posterior alongar ao máximo e retorne contraindo os glúteos.</p>
             </div>
         """, unsafe_allow_html=True)
         
     with st.expander("🔥 2. Cadeira Flexora"):
         st.markdown('<div class="badge-card">⚡ Séries: 3x 12 reps | Foco: Posterior de coxa</div>', unsafe_allow_html=True)
-        st.video("https://www.youtube.com/watch?v=ELq70a80ATC")
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução</h4>
-                <p>🔹 Deite-se de bruços com o rolo apoiado na panturrilha.</p>
-                <p>🔹 Flexione as pernas puxando o peso ao máximo.</p>
+                <h4>🎯 Execução Correta</h4>
+                <p>🔹 Deite-se de bruços com o rolo de apoio posicionado na altura da panturrilha.</p>
+                <p>🔹 Flexione as pernas puxando o peso totalmente e retorne desacelerando.</p>
             </div>
         """, unsafe_allow_html=True)
 
@@ -197,23 +187,21 @@ elif dia_escolhido == "Sábado":
     
     with st.expander("🏃 1. Burpees"):
         st.markdown('<div class="badge-card">⚡ Séries: 4x 45 segundos | Foco: Condicionamento</div>', unsafe_allow_html=True)
-        st.video("https://www.youtube.com/watch?v=TU8QYVW0gDU")
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução</h4>
-                <p>🔹 Agache, jogue os pés para trás fazendo uma flexão.</p>
-                <p>🔹 Retorne os pés para frente e dê um salto explosivo.</p>
+                <h4>🎯 Execução Correta</h4>
+                <p>🔹 Agache, jogue os pés para trás fazendo uma flexão completa de braço.</p>
+                <p>🔹 Retorne os pés rapidamente para frente e dê um salto explosivo vertical.</p>
             </div>
         """, unsafe_allow_html=True)
         
     with st.expander("🔥 2. Pular Corda"):
         st.markdown('<div class="badge-card">⚡ Séries: 4x 1 minuto | Foco: Resistência</div>', unsafe_allow_html=True)
-        st.video("https://www.youtube.com/watch?v=1B0d2w1K34I")
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução</h4>
-                <p>🔹 Cotovelos próximos ao corpo girando os punhos.</p>
-                <p>🔹 Salte usando a ponta dos pés em ritmo constante.</p>
+                <h4>🎯 Execução Correta</h4>
+                <p>🔹 Mantenha os cotovelos próximos ao corpo girando apenas os punhos.</p>
+                <p>🔹 Salte levemente usando a ponta dos pés em um ritmo constante.</p>
             </div>
         """, unsafe_allow_html=True)
 
@@ -222,22 +210,20 @@ elif dia_escolhido == "Domingo":
     
     with st.expander("🧘 1. Alongamento Global"):
         st.markdown('<div class="badge-card">⚡ Duração: 15-20 minutos | Foco: Soltura muscular</div>', unsafe_allow_html=True)
-        st.video("https://www.youtube.com/watch?v=g_tea8ZNk5A")
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução</h4>
-                <p>🔹 Respire fundo de forma controlada e relaxada.</p>
-                <p>🔹 Mantenha cada posição estática por 20 a 30 segundos.</p>
+                <h4>🎯 Execução Correta</h4>
+                <p>🔹 Respire fundo de forma controlada, relaxando a musculatura trabalhada na semana.</p>
+                <p>🔹 Mantenha cada posição estática de alongamento por 20 a 30 segundos.</p>
             </div>
         """, unsafe_allow_html=True)
         
     with st.expander("🚶 2. Caminhada Leve"):
         st.markdown('<div class="badge-card">⚡ Duração: 30 minutos | Foco: Descanso ativo</div>', unsafe_allow_html=True)
-        st.video("https://www.youtube.com/watch?v=7Wp8v7xQv7I")
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução</h4>
-                <p>🔹 Mantenha uma passada confortável focando na respiração.</p>
-                <p>🔹 Auxilia na circulação e recuperação ativa.</p>
+                <h4>🎯 Execução Correta</h4>
+                <p>🔹 Mantenha uma passada confortável e constante, focando em uma boa respiração.</p>
+                <p>🔹 Excelente para auxiliar na circulação sanguínea e recuperação ativa dos músculos.</p>
             </div>
         """, unsafe_allow_html=True)
