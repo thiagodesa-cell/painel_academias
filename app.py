@@ -65,13 +65,14 @@ st.sidebar.markdown("📧 thiago.deasa@yahoo.com.br")
 st.title("💪 Meu App de Treinos")
 st.write("Séries completas de segunda a domingo na palma da mão")
 
-# --- Lógica de Exibição por Dia da Semana ---
+# --- Lógica de Exibição por Dia da Semana com Vídeos Curtos ---
 
 if dia_escolhido == "Segunda-feira":
     st.header("💥 Segunda-feira: Peito e Tríceps")
     
     with st.expander("🏋️ 1. Supino Reto com Halteres"):
         st.markdown('<div class="badge-card">⚡ Séries: 4x 10-12 reps | Foco: Peitoral e Tríceps</div>', unsafe_allow_html=True)
+        st.video("https://www.w3schools.com/html/mov_bbb.mp4") # Vídeo demonstrativo leve
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -82,6 +83,7 @@ if dia_escolhido == "Segunda-feira":
         
     with st.expander("🔥 2. Tríceps Pulley"):
         st.markdown('<div class="badge-card">⚡ Séries: 4x 12 reps | Foco: Tríceps</div>', unsafe_allow_html=True)
+        st.video("https://www.w3schools.com/html/mov_bbb.mp4")
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -95,6 +97,7 @@ elif dia_escolhido == "Terça-feira":
     
     with st.expander("🏋️ 1. Agachamento Livre"):
         st.markdown('<div class="badge-card">⚡ Séries: 4x 8-10 reps | Foco: Pernas e Glúteos</div>', unsafe_allow_html=True)
+        st.video("https://www.w3schools.com/html/mov_bbb.mp4")
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -105,6 +108,7 @@ elif dia_escolhido == "Terça-feira":
         
     with st.expander("🔥 2. Cadeira Extensora"):
         st.markdown('<div class="badge-card">⚡ Séries: 3x 12 reps | Foco: Quadríceps</div>', unsafe_allow_html=True)
+        st.video("https://www.w3schools.com/html/mov_bbb.mp4")
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -118,6 +122,7 @@ elif dia_escolhido == "Quarta-feira":
     
     with st.expander("🏋️ 1. Puxada Alta Frontal"):
         st.markdown('<div class="badge-card">⚡ Séries: 4x 10 reps | Foco: Dorsal e Bíceps</div>', unsafe_allow_html=True)
+        st.video("https://www.w3schools.com/html/mov_bbb.mp4")
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -128,6 +133,7 @@ elif dia_escolhido == "Quarta-feira":
         
     with st.expander("🔥 2. Rosca Direta"):
         st.markdown('<div class="badge-card">⚡ Séries: 4x 12 reps | Foco: Bíceps</div>', unsafe_allow_html=True)
+        st.video("https://www.w3schools.com/html/mov_bbb.mp4")
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -141,6 +147,7 @@ elif dia_escolhido == "Quinta-feira":
     
     with st.expander("🏋️ 1. Desenvolvimento com Halteres"):
         st.markdown('<div class="badge-card">⚡ Séries: 4x 12 reps | Foco: Ombros</div>', unsafe_allow_html=True)
+        st.video("https://www.w3schools.com/html/mov_bbb.mp4")
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -151,6 +158,7 @@ elif dia_escolhido == "Quinta-feira":
         
     with st.expander("🔥 2. Prancha Abdominal"):
         st.markdown('<div class="badge-card">⚡ Séries: 3x 45 segundos | Foco: Core</div>', unsafe_allow_html=True)
+        st.video("https://www.w3schools.com/html/mov_bbb.mp4")
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -164,6 +172,7 @@ elif dia_escolhido == "Sexta-feira":
     
     with st.expander("🏋️ 1. Stiff com Barra"):
         st.markdown('<div class="badge-card">⚡ Séries: 4x 10 reps | Foco: Posterior e Glúteos</div>', unsafe_allow_html=True)
+        st.video("https://www.w3schools.com/html/mov_bbb.mp4")
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -174,6 +183,7 @@ elif dia_escolhido == "Sexta-feira":
         
     with st.expander("🔥 2. Cadeira Flexora"):
         st.markdown('<div class="badge-card">⚡ Séries: 3x 12 reps | Foco: Posterior de coxa</div>', unsafe_allow_html=True)
+        st.video("https://www.w3schools.com/html/mov_bbb.mp4")
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -187,6 +197,7 @@ elif dia_escolhido == "Sábado":
     
     with st.expander("🏃 1. Burpees"):
         st.markdown('<div class="badge-card">⚡ Séries: 4x 45 segundos | Foco: Condicionamento</div>', unsafe_allow_html=True)
+        st.video("https://www.w3schools.com/html/mov_bbb.mp4")
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -197,6 +208,7 @@ elif dia_escolhido == "Sábado":
         
     with st.expander("🔥 2. Pular Corda"):
         st.markdown('<div class="badge-card">⚡ Séries: 4x 1 minuto | Foco: Resistência</div>', unsafe_allow_html=True)
+        st.video("https://www.w3schools.com/html/mov_bbb.mp4")
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -210,6 +222,7 @@ elif dia_escolhido == "Domingo":
     
     with st.expander("🧘 1. Alongamento Global"):
         st.markdown('<div class="badge-card">⚡ Duração: 15-20 minutos | Foco: Soltura muscular</div>', unsafe_allow_html=True)
+        st.video("https://www.w3schools.com/html/mov_bbb.mp4")
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -220,6 +233,7 @@ elif dia_escolhido == "Domingo":
         
     with st.expander("🚶 2. Caminhada Leve"):
         st.markdown('<div class="badge-card">⚡ Duração: 30 minutos | Foco: Descanso ativo</div>', unsafe_allow_html=True)
+        st.video("https://www.w3schools.com/html/mov_bbb.mp4")
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
