@@ -30,7 +30,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# --- Conteúdo do App ---
+# --- Conteúdo do App (Menu Lateral) ---
 st.sidebar.title("🔥 Menu de Treinos")
 dias_semana = [
     "Segunda-feira", "Terça-feira", "Quarta-feira", 
@@ -38,8 +38,14 @@ dias_semana = [
 ]
 dia_escolhido = st.sidebar.selectbox("Escolha o Dia:", dias_semana)
 
+# --- Assinatura no Menu Lateral ---
+st.sidebar.markdown("---")
+st.sidebar.markdown("### 👨‍💻 Sobre o Desenvolvedor")
+st.sidebar.markdown("**Desenvolvedor:** Thiago de Sá")
+st.sidebar.markdown("📧 thiago.deasa@yahoo.com.br")
+
 st.title("💪 Meu App de Treinos")
-st.write("Séries completas de segunda a domingo na palma da mão")
+st.write("Séries completas de segunda a domingo na palma da mão com GIFs animados de execução")
 
 # --- Lógica de Exibição por Dia da Semana com GIFs Animados ---
 
@@ -81,7 +87,7 @@ elif dia_escolhido == "Quarta-feira":
         st.write("**Dica:** Estufe o peito ao puxar a barra em direção à clavícula.")
         st.image("https://fitnessprogramer.com/wp-content/uploads/2021/02/Lat-Pulldown.gif", width=400, caption="Animação: Puxada Alta")
         
-    with st.expander("🔥 2. Rosca Directa com Barra W"):
+    with st.expander("🔥 2. Rosca Direta com Barra W"):
         st.write("**Séries:** 4 de 12 repetições")
         st.write("**Foco:** Bíceps")
         st.image("https://fitnessprogramer.com/wp-content/uploads/2021/02/Barbell-Curl.gif", width=400, caption="Animação: Rosca Direta")
