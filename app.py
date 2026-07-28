@@ -57,7 +57,7 @@ st.sidebar.markdown("📧 thiago.deasa@yahoo.com.br")
 st.title("💪 Meu App de Treinos")
 st.write("Séries completas de segunda a domingo na palma da mão")
 
-# --- Lógica de Exibição por Dia da Semana com GIFs Nativos do Streamlit ---
+# --- Lógica de Exibição por Dia da Semana com GIFs Compatíveis ---
 
 if dia_escolhido == "Segunda-feira":
     st.header("💥 Segunda-feira: Membros Superiores (Peito e Tríceps)")
@@ -65,7 +65,7 @@ if dia_escolhido == "Segunda-feira":
     with st.expander("🏋️ 1. Supino Reto com Halteres"):
         st.write("**Séries:** 4 de 10 a 12 repetições")
         st.write("**Foco:** Peitoral e Tríceps")
-        st.image("https://upload.wikimedia.org/wikipedia/commons/e/e4/Dumbbell-bench-press-1.gif", width=380)
+        st.image("https://images.tcdn.com.br/img/img_prod/1083984/gif_supino_reto.gif", width=380)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução do Movimento</h4>
@@ -77,7 +77,7 @@ if dia_escolhido == "Segunda-feira":
     with st.expander("🔥 2. Tríceps Pulley"):
         st.write("**Séries:** 4 de 12 repetições")
         st.write("**Foco:** Tríceps")
-        st.image("https://upload.wikimedia.org/wikipedia/commons/3/36/Cable-pushdown-1.gif", width=380)
+        st.image("https://images.tcdn.com.br/img/img_prod/1083984/gif_triceps_pulley.gif", width=380)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução do Movimento</h4>
@@ -92,7 +92,7 @@ elif dia_escolhido == "Terça-feira":
     with st.expander("🏋️ 1. Agachamento Livre"):
         st.write("**Séries:** 4 de 8 a 10 repetições")
         st.write("**Foco:** Pernas e Glúteos")
-        st.image("https://upload.wikimedia.org/wikipedia/commons/d/d3/Barbell-squat-1.gif", width=380)
+        st.image("https://images.tcdn.com.br/img/img_prod/1083984/gif_agachamento_livre.gif", width=380)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução do Movimento</h4>
@@ -104,7 +104,7 @@ elif dia_escolhido == "Terça-feira":
     with st.expander("🔥 2. Cadeira Extensora"):
         st.write("**Séries:** 3 de 12 repetições (com Drop-set)")
         st.write("**Foco:** Quadríceps isolado")
-        st.image("https://upload.wikimedia.org/wikipedia/commons/b/b3/Leg-extension-1.gif", width=380)
+        st.image("https://images.tcdn.com.br/img/img_prod/1083984/gif_cadeira_extensora.gif", width=380)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução do Movimento</h4>
@@ -119,7 +119,7 @@ elif dia_escolhido == "Quarta-feira":
     with st.expander("🏋️ 1. Puxada Alta Frontal"):
         st.write("**Séries:** 4 de 10 repetições")
         st.write("**Foco:** Dorsal e Bíceps")
-        st.image("https://upload.wikimedia.org/wikipedia/commons/e/e1/Lat-pulldown-1.gif", width=380)
+        st.image("https://images.tcdn.com.br/img/img_prod/1083984/gif_puxada_alta.gif", width=380)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução do Movimento</h4>
@@ -131,7 +131,7 @@ elif dia_escolhido == "Quarta-feira":
     with st.expander("🔥 2. Rosca Direta com Barra W"):
         st.write("**Séries:** 4 de 12 repetições")
         st.write("**Foco:** Bíceps")
-        st.image("https://upload.wikimedia.org/wikipedia/commons/b/b5/Barbell-curl-1.gif", width=380)
+        st.image("https://images.tcdn.com.br/img/img_prod/1083984/gif_rosca_direta.gif", width=380)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução do Movimento</h4>
@@ -146,7 +146,7 @@ elif dia_escolhido == "Quinta-feira":
     with st.expander("🏋️ 1. Desenvolvimento com Halteres"):
         st.write("**Séries:** 4 de 12 repetições")
         st.write("**Foco:** Deltoides (Ombros)")
-        st.image("https://upload.wikimedia.org/wikipedia/commons/c/c5/Dumbbell-shoulder-press-1.gif", width=380)
+        st.image("https://images.tcdn.com.br/img/img_prod/1083984/gif_desenvolvimento.gif", width=380)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução do Movimento</h4>
@@ -158,7 +158,7 @@ elif dia_escolhido == "Quinta-feira":
     with st.expander("🔥 2. Prancha Abdominal"):
         st.write("**Séries:** 3 séries de 45 segundos")
         st.write("**Foco:** Core e Abdômen")
-        st.image("https://upload.wikimedia.org/wikipedia/commons/8/89/Plank-1.gif", width=380)
+        st.image("https://images.tcdn.com.br/img/img_prod/1083984/gif_prancha.gif", width=380)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução do Movimento</h4>
@@ -173,7 +173,7 @@ elif dia_escolhido == "Sexta-feira":
     with st.expander("🏋️ 1. Stiff com Barra"):
         st.write("**Séries:** 4 de 10 repetições")
         st.write("**Foco:** Posterior de coxa e glúteos")
-        st.image("https://upload.wikimedia.org/wikipedia/commons/7/7b/Barbell-deadlift-1.gif", width=380)
+        st.image("https://images.tcdn.com.br/img/img_prod/1083984/gif_stiff.gif", width=380)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução do Movimento</h4>
@@ -185,7 +185,7 @@ elif dia_escolhido == "Sexta-feira":
     with st.expander("🔥 2. Cadeira Flexora"):
         st.write("**Séries:** 3 de 12 repetições")
         st.write("**Foco:** Posterior de coxa")
-        st.image("https://upload.wikimedia.org/wikipedia/commons/9/91/Leg-curl-1.gif", width=380)
+        st.image("https://images.tcdn.com.br/img/img_prod/1083984/gif_cadeira_flexora.gif", width=380)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução do Movimento</h4>
@@ -200,7 +200,7 @@ elif dia_escolhido == "Sábado":
     with st.expander("🏃 1. Burpees"):
         st.write("**Séries:** 4 blocos de 45 segundos")
         st.write("**Foco:** Condicionamento físico geral e queima calórica")
-        st.image("https://upload.wikimedia.org/wikipedia/commons/b/b2/Burpee-1.gif", width=380)
+        st.image("https://images.tcdn.com.br/img/img_prod/1083984/gif_burpee.gif", width=380)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução do Movimento</h4>
@@ -212,7 +212,7 @@ elif dia_escolhido == "Sábado":
     with st.expander("🔥 2. Pular Corda"):
         st.write("**Séries:** 4 rounds de 1 minuto")
         st.write("**Foco:** Resistência e Panturrilhas")
-        st.image("https://upload.wikimedia.org/wikipedia/commons/4/4c/Jump-rope-1.gif", width=380)
+        st.image("https://images.tcdn.com.br/img/img_prod/1083984/gif_pular_corda.gif", width=380)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução do Movimento</h4>
@@ -227,7 +227,7 @@ elif dia_escolhido == "Domingo":
     with st.expander("🧘 1. Alongamento Global"):
         st.write("**Duração:** 15 a 20 minutos")
         st.write("**Foco:** Soltura muscular e prevenção de lesões")
-        st.image("https://upload.wikimedia.org/wikipedia/commons/5/5e/Stretching-1.gif", width=380)
+        st.image("https://images.tcdn.com.br/img/img_prod/1083984/gif_alongamento.gif", width=380)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução do Movimento</h4>
@@ -239,7 +239,7 @@ elif dia_escolhido == "Domingo":
     with st.expander("🚶 2. Caminhada Leve (Opcional)"):
         st.write("**Duração:** 30 minutos em ritmo leve")
         st.write("**Foco:** Circulação e descanso ativo")
-        st.image("https://upload.wikimedia.org/wikipedia/commons/6/62/Walking-1.gif", width=380)
+        st.image("https://images.tcdn.com.br/img/img_prod/1083984/gif_caminhada.gif", width=380)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução do Movimento</h4>
