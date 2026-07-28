@@ -7,16 +7,18 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# --- CSS para destacar o ícone da sidebar (setinha branca e visível) ---
+# --- CSS com força máxima para a setinha ficar branca ---
 st.markdown("""
     <style>
-        /* Força a cor do ícone da sidebar para branco */
-        [data-testid="collapsedControl"] svg {
+        /* Força a cor do ícone e dos traços da setinha da sidebar para branco */
+        [data-testid="collapsedControl"] svg, 
+        [data-testid="collapsedControl"] svg path {
             fill: white !important;
+            stroke: white !important;
         }
-        /* Garante fundo transparente e boa área de toque */
         [data-testid="collapsedControl"] {
-            background-color: transparent !important;
+            background-color: rgba(255, 255, 255, 0.1) !important;
+            border-radius: 50% !important;
         }
     </style>
 """, unsafe_allow_html=True)
@@ -35,13 +37,15 @@ if dia_escolhido == "Segunda-feira":
         st.write("**Séries:** 3 de 12 repetições")
         st.write("**Foco:** Peitoral e Tríceps")
         st.write("**Dica:** Manter os cotovelos levemente flexionados.")
+        # Exemplo com foto normal
         st.image("https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=400", caption="Supino Reto")
         
     with st.expander("🏃 Agachamento Livre"):
         st.write("**Séries:** 3 de 15 repetições")
         st.write("**Foco:** Pernas e Glúteos")
         st.write("**Dica:** Coluna reta e força nos calcanhares.")
-        st.image("https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=400", caption="Agachamento Livre")
+        # Exemplo com GIF animado (basta colocar o link de um GIF válido aqui)
+        st.image("https://media.giphy.com/media/l0HlHFRbmaZtBRhXG/giphy.gif", caption="Agachamento (Exemplo Animado)")
 else:
     st.header(f"Treino de {dia_escolhido}")
     st.write("Configure os exercícios deste dia no seu painel.")
