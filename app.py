@@ -54,7 +54,7 @@ st.sidebar.markdown("📧 thiago.deasa@yahoo.com.br")
 st.title("💪 Meu App de Treinos")
 st.write("Séries completas de segunda a domingo na palma da mão")
 
-# --- Lógica de Exibição por Dia da Semana com GIFs Animados ---
+# --- Lógica de Exibição por Dia da Semana ---
 
 if dia_escolhido == "Segunda-feira":
     st.header("💥 Segunda-feira: Peito e Tríceps")
@@ -62,7 +62,6 @@ if dia_escolhido == "Segunda-feira":
     with st.expander("🏋️ 1. Supino Reto com Halteres"):
         st.write("**Séries:** 4x 10-12 reps")
         st.write("**Foco:** Peitoral e Tríceps")
-        st.markdown('<img src="https://hips.hearstapps.com/hmg-prod/images/workouts/2016/3/dumbbellbenchpress-1457101851.gif" width="320" style="border-radius: 8px;">', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -74,7 +73,6 @@ if dia_escolhido == "Segunda-feira":
     with st.expander("🔥 2. Tríceps Pulley"):
         st.write("**Séries:** 4x 12 reps")
         st.write("**Foco:** Tríceps")
-        st.markdown('<img src="https://hips.hearstapps.com/hmg-prod/images/workouts/2016/3/tricepspushdown-1457046187.gif" width="320" style="border-radius: 8px;">', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -89,7 +87,6 @@ elif dia_escolhido == "Terça-feira":
     with st.expander("🏋️ 1. Agachamento Livre"):
         st.write("**Séries:** 4x 8-10 reps")
         st.write("**Foco:** Pernas e Glúteos")
-        st.markdown('<img src="https://hips.hearstapps.com/hmg-prod/images/workouts/2016/3/barbellsquat-1456956667.gif" width="320" style="border-radius: 8px;">', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -101,7 +98,6 @@ elif dia_escolhido == "Terça-feira":
     with st.expander("🔥 2. Cadeira Extensora"):
         st.write("**Séries:** 3x 12 reps")
         st.write("**Foco:** Quadríceps")
-        st.markdown('<img src="https://images.tcdn.com.br/img/editor/up/852683/CadeiraExtensora.gif" width="320" style="border-radius: 8px;">', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -116,7 +112,6 @@ elif dia_escolhido == "Quarta-feira":
     with st.expander("🏋️ 1. Puxada Alta Frontal"):
         st.write("**Séries:** 4x 10 reps")
         st.write("**Foco:** Dorsal e Bíceps")
-        st.markdown('<img src="https://hips.hearstapps.com/hmg-prod/images/workouts/2016/3/latpulldown-1457039535.gif" width="320" style="border-radius: 8px;">', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -128,7 +123,6 @@ elif dia_escolhido == "Quarta-feira":
     with st.expander("🔥 2. Rosca Direta"):
         st.write("**Séries:** 4x 12 reps")
         st.write("**Foco:** Bíceps")
-        st.markdown('<img src="https://hips.hearstapps.com/hmg-prod/images/workouts/2016/3/barbellcurl-1456956272.gif" width="320" style="border-radius: 8px;">', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -143,7 +137,6 @@ elif dia_escolhido == "Quinta-feira":
     with st.expander("🏋️ 1. Desenvolvimento com Halteres"):
         st.write("**Séries:** 4x 12 reps")
         st.write("**Foco:** Ombros")
-        st.markdown('<img src="https://hips.hearstapps.com/hmg-prod/images/workouts/2016/3/dumbbellshoulderpress-1457102048.gif" width="320" style="border-radius: 8px;">', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -155,7 +148,6 @@ elif dia_escolhido == "Quinta-feira":
     with st.expander("🔥 2. Prancha Abdominal"):
         st.write("**Séries:** 3x 45 segundos")
         st.write("**Foco:** Core")
-        st.markdown('<img src="https://hips.hearstapps.com/hmg-prod/images/workouts/2016/3/plank-1457043834.gif" width="320" style="border-radius: 8px;">', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -170,7 +162,6 @@ elif dia_escolhido == "Sexta-feira":
     with st.expander("🏋️ 1. Stiff com Barra"):
         st.write("**Séries:** 4x 10 reps")
         st.write("**Foco:** Posterior e Glúteos")
-        st.markdown('<img src="https://hips.hearstapps.com/hmg-prod/images/workouts/2016/3/barbellstifflegdeadlift-1456956690.gif" width="320" style="border-radius: 8px;">', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -182,7 +173,6 @@ elif dia_escolhido == "Sexta-feira":
     with st.expander("🔥 2. Cadeira Flexora"):
         st.write("**Séries:** 3x 12 reps")
         st.write("**Foco:** Posterior de coxa")
-        st.markdown('<img src="https://images.tcdn.com.br/img/editor/up/852683/CadeiraFlexora.gif" width="320" style="border-radius: 8px;">', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -197,7 +187,6 @@ elif dia_escolhido == "Sábado":
     with st.expander("🏃 1. Burpees"):
         st.write("**Séries:** 4x 45 segundos")
         st.write("**Foco:** Condicionamento")
-        st.markdown('<img src="https://hips.hearstapps.com/hmg-prod/images/workouts/2016/3/burpee-1456956799.gif" width="320" style="border-radius: 8px;">', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -209,7 +198,6 @@ elif dia_escolhido == "Sábado":
     with st.expander("🔥 2. Pular Corda"):
         st.write("**Séries:** 4x 1 minuto")
         st.write("**Foco:** Resistência")
-        st.markdown('<img src="https://images.tcdn.com.br/img/editor/up/852683/PularCorda.gif" width="320" style="border-radius: 8px;">', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -224,7 +212,6 @@ elif dia_escolhido == "Domingo":
     with st.expander("🧘 1. Alongamento Global"):
         st.write("**Duração:** 15-20 minutos")
         st.write("**Foco:** Soltura muscular")
-        st.markdown('<img src="https://images.tcdn.com.br/img/editor/up/852683/Alongamento.gif" width="320" style="border-radius: 8px;">', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -236,7 +223,6 @@ elif dia_escolhido == "Domingo":
     with st.expander("🚶 2. Caminhada Leve"):
         st.write("**Duração:** 30 minutos")
         st.write("**Foco:** Descanso ativo")
-        st.markdown('<img src="https://images.tcdn.com.br/img/editor/up/852683/Caminhada.gif" width="320" style="border-radius: 8px;">', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
