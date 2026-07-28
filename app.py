@@ -37,6 +37,19 @@ st.markdown("""
             margin-top: 10px;
             margin-bottom: 10px;
         }
+        
+        /* Estilo para garantir que o container da animação centralize e flua bem */
+        .anim-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        .anim-container img {
+            max-width: 350px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.6);
+        }
     </style>
 """, unsafe_allow_html=True)
 
@@ -57,7 +70,7 @@ st.sidebar.markdown("📧 thiago.deasa@yahoo.com.br")
 st.title("💪 Meu App de Treinos")
 st.write("Séries completas de segunda a domingo na palma da mão")
 
-# --- Lógica de Exibição por Dia da Semana com Sistema Visual Integrado ---
+# --- Lógica de Exibição por Dia da Semana com Animações e Dicas ---
 
 if dia_escolhido == "Segunda-feira":
     st.header("💥 Segunda-feira: Membros Superiores (Peito e Tríceps)")
@@ -65,20 +78,22 @@ if dia_escolhido == "Segunda-feira":
     with st.expander("🏋️ 1. Supino Reto com Halteres"):
         st.write("**Séries:** 4 de 10 a 12 repetições")
         st.write("**Foco:** Peitoral e Tríceps")
+        st.markdown('<div class="anim-container"><img src="https://images.tcdn.com.br/img/img_prod/1083984/gif_supino_reto.gif" alt="Supino Reto"></div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução do Movimento: Supino Reto</h4>
-                <p>🔹 Deite-se no banco, segure os halteres na linha do peito com os cotovelos em ângulo de 45 graus.</p>
-                <p>🔹 Empurre os pesos para cima contraindo o peitoral e desça controlando o movimento.</p>
+                <h4>🎯 Execução do Movimento</h4>
+                <p>🔹 Deite-se no banco, segure os halteres na linha do peito com os cotovelos em 45 graus.</p>
+                <p>🔹 Empurre para cima contraindo o peitoral e desça controlando o movimento.</p>
             </div>
         """, unsafe_allow_html=True)
         
     with st.expander("🔥 2. Tríceps Pulley"):
         st.write("**Séries:** 4 de 12 repetições")
         st.write("**Foco:** Tríceps")
+        st.markdown('<div class="anim-container"><img src="https://images.tcdn.com.br/img/img_prod/1083984/gif_triceps_pulley.gif" alt="Tríceps Pulley"></div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução do Movimento: Tríceps Pulley</h4>
+                <h4>🎯 Execução do Movimento</h4>
                 <p>🔹 Mantenha os cotovelos fixos colados ao lado do corpo.</p>
                 <p>🔹 Estique os braços para baixo fazendo força total no tríceps e retorne controlando.</p>
             </div>
@@ -90,10 +105,11 @@ elif dia_escolhido == "Terça-feira":
     with st.expander("🏋️ 1. Agachamento Livre"):
         st.write("**Séries:** 4 de 8 a 10 repetições")
         st.write("**Foco:** Pernas e Glúteos")
+        st.markdown('<div class="anim-container"><img src="https://images.tcdn.com.br/img/img_prod/1083984/gif_agachamento_livre.gif" alt="Agachamento Livre"></div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução do Movimento: Agachamento Livre</h4>
-                <p>🔹 Posicione os pés na largura dos ombros, coluna reta e abdômen contraído.</p>
+                <h4>🎯 Execução do Movimento</h4>
+                <p>🔹 Pés na largura dos ombros, coluna reta e abdômen bem contraído.</p>
                 <p>🔹 Desça o quadril jogando para trás e suba forçando a força nos calcanhares.</p>
             </div>
         """, unsafe_allow_html=True)
@@ -101,10 +117,11 @@ elif dia_escolhido == "Terça-feira":
     with st.expander("🔥 2. Cadeira Extensora"):
         st.write("**Séries:** 3 de 12 repetições (com Drop-set)")
         st.write("**Foco:** Quadríceps isolado")
+        st.markdown('<div class="anim-container"><img src="https://images.tcdn.com.br/img/img_prod/1083984/gif_cadeira_extensora.gif" alt="Cadeira Extensora"></div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução do Movimento: Cadeira Extensora</h4>
-                <p>🔹 Sente-se com o apoio ajustado na canela.</p>
+                <h4>🎯 Execução do Movimento</h4>
+                <p>🔹 Sente-se com o apoio ajustado na altura da canela.</p>
                 <p>🔹 Estenda completamente as pernas, segure 1 segundo em cima e desça devagar.</p>
             </div>
         """, unsafe_allow_html=True)
@@ -115,10 +132,11 @@ elif dia_escolhido == "Quarta-feira":
     with st.expander("🏋️ 1. Puxada Alta Frontal"):
         st.write("**Séries:** 4 de 10 repetições")
         st.write("**Foco:** Dorsal e Bíceps")
+        st.markdown('<div class="anim-container"><img src="https://images.tcdn.com.br/img/img_prod/1083984/gif_puxada_alta.gif" alt="Puxada Alta"></div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução do Movimento: Puxada Alta</h4>
-                <p>🔹 Segure a barra com pegada aberta e estufe o peito.</p>
+                <h4>🎯 Execução do Movimento</h4>
+                <p>🔹 Segure a barra com pegada aberta e estufe bem o peito.</p>
                 <p>🔹 Puxe a barra em direção à clavícula focando em fechar as costas.</p>
             </div>
         """, unsafe_allow_html=True)
@@ -126,9 +144,10 @@ elif dia_escolhido == "Quarta-feira":
     with st.expander("🔥 2. Rosca Direta com Barra W"):
         st.write("**Séries:** 4 de 12 repetições")
         st.write("**Foco:** Bíceps")
+        st.markdown('<div class="anim-container"><img src="https://images.tcdn.com.br/img/img_prod/1083984/gif_rosca_direta.gif" alt="Rosca Direta"></div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução do Movimento: Rosca Direta</h4>
+                <h4>🎯 Execução do Movimento</h4>
                 <p>🔹 Mantenha o corpo firme e alinhado sem balançar o tronco.</p>
                 <p>🔹 Flexione os cotovelos trazendo a barra na direção do peito.</p>
             </div>
@@ -140,9 +159,10 @@ elif dia_escolhido == "Quinta-feira":
     with st.expander("🏋️ 1. Desenvolvimento com Halteres"):
         st.write("**Séries:** 4 de 12 repetições")
         st.write("**Foco:** Deltoides (Ombros)")
+        st.markdown('<div class="anim-container"><img src="https://images.tcdn.com.br/img/img_prod/1083984/gif_desenvolvimento.gif" alt="Desenvolvimento"></div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução do Movimento: Desenvolvimento</h4>
+                <h4>🎯 Execução do Movimento</h4>
                 <p>🔹 Segure os halteres na altura dos ombros sentado no banco.</p>
                 <p>🔹 Empurre os pesos para cima até quase unirem acima da cabeça.</p>
             </div>
@@ -151,9 +171,10 @@ elif dia_escolhido == "Quinta-feira":
     with st.expander("🔥 2. Prancha Abdominal"):
         st.write("**Séries:** 3 séries de 45 segundos")
         st.write("**Foco:** Core e Abdômen")
+        st.markdown('<div class="anim-container"><img src="https://images.tcdn.com.br/img/img_prod/1083984/gif_prancha.gif" alt="Prancha"></div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução do Movimento: Prancha Abdominal</h4>
+                <h4>🎯 Execução do Movimento</h4>
                 <p>🔹 Apoie os antebraços no chão e mantenha o corpo reto como uma tábua.</p>
                 <p>🔹 Contraia o abdômen e os glúteos rigidamente durante todo o tempo.</p>
             </div>
@@ -165,9 +186,10 @@ elif dia_escolhido == "Sexta-feira":
     with st.expander("🏋️ 1. Stiff com Barra"):
         st.write("**Séries:** 4 de 10 repetições")
         st.write("**Foco:** Posterior de coxa e glúteos")
+        st.markdown('<div class="anim-container"><img src="https://images.tcdn.com.br/img/img_prod/1083984/gif_stiff.gif" alt="Stiff"></div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução do Movimento: Stiff com Barra</h4>
+                <h4>🎯 Execução do Movimento</h4>
                 <p>🔹 Mantenha os joelhos semi-flexionados e empurre o quadril para trás.</p>
                 <p>🔹 Sinta o posterior da coxa alongar e retorne contraindo os glúteos.</p>
             </div>
@@ -176,9 +198,10 @@ elif dia_escolhido == "Sexta-feira":
     with st.expander("🔥 2. Cadeira Flexora"):
         st.write("**Séries:** 3 de 12 repetições")
         st.write("**Foco:** Posterior de coxa")
+        st.markdown('<div class="anim-container"><img src="https://images.tcdn.com.br/img/img_prod/1083984/gif_cadeira_flexora.gif" alt="Cadeira Flexora"></div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução do Movimento: Cadeira Flexora</h4>
+                <h4>🎯 Execução do Movimento</h4>
                 <p>🔹 Deite-se de bruços com o rolo apoiado na parte inferior da panturrilha.</p>
                 <p>🔹 Flexione as pernas puxando o peso ao máximo e retorne controlando.</p>
             </div>
@@ -190,9 +213,10 @@ elif dia_escolhido == "Sábado":
     with st.expander("🏃 1. Burpees"):
         st.write("**Séries:** 4 blocos de 45 segundos")
         st.write("**Foco:** Condicionamento físico geral e queima calórica")
+        st.markdown('<div class="anim-container"><img src="https://images.tcdn.com.br/img/img_prod/1083984/gif_burpee.gif" alt="Burpee"></div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução do Movimento: Burpee</h4>
+                <h4>🎯 Execução do Movimento</h4>
                 <p>🔹 Agache, jogue os pés para trás fazendo uma flexão de braço.</p>
                 <p>🔹 Retorne os pés para frente rapidamente e dê um salto vertical explosivo.</p>
             </div>
@@ -201,9 +225,10 @@ elif dia_escolhido == "Sábado":
     with st.expander("🔥 2. Pular Corda"):
         st.write("**Séries:** 4 rounds de 1 minuto")
         st.write("**Foco:** Resistência e Panturrilhas")
+        st.markdown('<div class="anim-container"><img src="https://images.tcdn.com.br/img/img_prod/1083984/gif_pular_corda.gif" alt="Pular Corda"></div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução do Movimento: Pular Corda</h4>
+                <h4>🎯 Execução do Movimento</h4>
                 <p>🔹 Mantenha os cotovelos próximos ao corpo girando levemente os punhos.</p>
                 <p>🔹 Salte usando apenas a ponta dos pés em um ritmo constante.</p>
             </div>
@@ -215,10 +240,11 @@ elif dia_escolhido == "Domingo":
     with st.expander("🧘 1. Alongamento Global"):
         st.write("**Duração:** 15 a 20 minutos")
         st.write("**Foco:** Soltura muscular e prevenção de lesões")
+        st.markdown('<div class="anim-container"><img src="https://images.tcdn.com.br/img/img_prod/1083984/gif_alongamento.gif" alt="Alongamento"></div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução do Movimento: Alongamento Global</h4>
-                <p>🔹 Respire fundo de forma controlada.</p>
+                <h4>🎯 Execução do Movimento</h4>
+                <p>🔹 Respire fundo de forma controlada e relaxada.</p>
                 <p>🔹 Mantenha cada posição de alongamento estático por 20 a 30 segundos.</p>
             </div>
         """, unsafe_allow_html=True)
@@ -226,10 +252,11 @@ elif dia_escolhido == "Domingo":
     with st.expander("🚶 2. Caminhada Leve (Opcional)"):
         st.write("**Duração:** 30 minutos em ritmo leve")
         st.write("**Foco:** Circulação e descanso ativo")
+        st.markdown('<div class="anim-container"><img src="https://images.tcdn.com.br/img/img_prod/1083984/gif_caminhada.gif" alt="Caminhada"></div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
-                <h4>🎯 Execução do Movimento: Caminhada Leve</h4>
+                <h4>🎯 Execução do Movimento</h4>
                 <p>🔹 Mantenha uma passada confortável focando na respiração ritmada.</p>
-                <p>🔹 Auxilia na circulação sanguínea e recuperação muscular.</p>
+                <p>🔹 Auxilia na circulação sanguínea e recuperação muscular ativa.</p>
             </div>
         """, unsafe_allow_html=True)
