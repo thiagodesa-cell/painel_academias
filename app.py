@@ -65,14 +65,14 @@ st.sidebar.markdown("📧 thiago.deasa@yahoo.com.br")
 st.title("💪 Meu App de Treinos")
 st.write("Séries completas de segunda a domingo na palma da mão")
 
-# --- Lógica de Exibição por Dia da Semana com Vídeos Curtos ---
+# --- Lógica de Exibição por Dia da Semana com Vídeos Estáveis ---
 
 if dia_escolhido == "Segunda-feira":
     st.header("💥 Segunda-feira: Peito e Tríceps")
     
     with st.expander("🏋️ 1. Supino Reto com Halteres"):
         st.markdown('<div class="badge-card">⚡ Séries: 4x 10-12 reps | Foco: Peitoral e Tríceps</div>', unsafe_allow_html=True)
-        st.video("https://www.w3schools.com/html/mov_bbb.mp4") # Vídeo demonstrativo leve
+        st.video("https://www.w3schools.com/html/mov_bbb.mp4")
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
