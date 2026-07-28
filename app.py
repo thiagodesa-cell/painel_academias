@@ -34,6 +34,17 @@ st.markdown("""
             margin-top: 10px;
             margin-bottom: 10px;
         }
+        
+        .badge-card {
+            background-color: #252525;
+            color: #FF007F;
+            padding: 8px 15px;
+            border-radius: 6px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+            border: 1px solid #333;
+        }
     </style>
 """, unsafe_allow_html=True)
 
@@ -60,9 +71,7 @@ if dia_escolhido == "Segunda-feira":
     st.header("💥 Segunda-feira: Peito e Tríceps")
     
     with st.expander("🏋️ 1. Supino Reto com Halteres"):
-        st.write("**Séries:** 4x 10-12 reps")
-        st.write("**Foco:** Peitoral e Tríceps")
-        st.image("https://images.tcdn.com.br/img/editor/up/852683/SupinoReto.gif", width=320)
+        st.markdown('<div class="badge-card">⚡ Séries: 4x 10-12 reps | Foco: Peitoral e Tríceps</div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -72,9 +81,7 @@ if dia_escolhido == "Segunda-feira":
         """, unsafe_allow_html=True)
         
     with st.expander("🔥 2. Tríceps Pulley"):
-        st.write("**Séries:** 4x 12 reps")
-        st.write("**Foco:** Tríceps")
-        st.image("https://images.tcdn.com.br/img/editor/up/852683/TricepsPulley.gif", width=320)
+        st.markdown('<div class="badge-card">⚡ Séries: 4x 12 reps | Foco: Tríceps</div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -87,9 +94,7 @@ elif dia_escolhido == "Terça-feira":
     st.header("🦵 Terça-feira: Membros Inferiores (Quadríceps)")
     
     with st.expander("🏋️ 1. Agachamento Livre"):
-        st.write("**Séries:** 4x 8-10 reps")
-        st.write("**Foco:** Pernas e Glúteos")
-        st.image("https://images.tcdn.com.br/img/editor/up/852683/AgachamentoLivre.gif", width=320)
+        st.markdown('<div class="badge-card">⚡ Séries: 4x 8-10 reps | Foco: Pernas e Glúteos</div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -99,9 +104,7 @@ elif dia_escolhido == "Terça-feira":
         """, unsafe_allow_html=True)
         
     with st.expander("🔥 2. Cadeira Extensora"):
-        st.write("**Séries:** 3x 12 reps")
-        st.write("**Foco:** Quadríceps")
-        st.image("https://images.tcdn.com.br/img/editor/up/852683/CadeiraExtensora.gif", width=320)
+        st.markdown('<div class="badge-card">⚡ Séries: 3x 12 reps | Foco: Quadríceps</div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -114,9 +117,7 @@ elif dia_escolhido == "Quarta-feira":
     st.header("🦾 Quarta-feira: Costas e Bíceps")
     
     with st.expander("🏋️ 1. Puxada Alta Frontal"):
-        st.write("**Séries:** 4x 10 reps")
-        st.write("**Foco:** Dorsal e Bíceps")
-        st.image("https://images.tcdn.com.br/img/editor/up/852683/PuxadaAlta.gif", width=320)
+        st.markdown('<div class="badge-card">⚡ Séries: 4x 10 reps | Foco: Dorsal e Bíceps</div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -126,9 +127,7 @@ elif dia_escolhido == "Quarta-feira":
         """, unsafe_allow_html=True)
         
     with st.expander("🔥 2. Rosca Direta"):
-        st.write("**Séries:** 4x 12 reps")
-        st.write("**Foco:** Bíceps")
-        st.image("https://images.tcdn.com.br/img/editor/up/852683/RoscaDireta.gif", width=320)
+        st.markdown('<div class="badge-card">⚡ Séries: 4x 12 reps | Foco: Bíceps</div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -141,9 +140,7 @@ elif dia_escolhido == "Quinta-feira":
     st.header("🛡️ Quinta-feira: Ombros e Abdômen")
     
     with st.expander("🏋️ 1. Desenvolvimento com Halteres"):
-        st.write("**Séries:** 4x 12 reps")
-        st.write("**Foco:** Ombros")
-        st.image("https://images.tcdn.com.br/img/editor/up/852683/Desenvolvimento.gif", width=320)
+        st.markdown('<div class="badge-card">⚡ Séries: 4x 12 reps | Foco: Ombros</div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -153,9 +150,7 @@ elif dia_escolhido == "Quinta-feira":
         """, unsafe_allow_html=True)
         
     with st.expander("🔥 2. Prancha Abdominal"):
-        st.write("**Séries:** 3x 45 segundos")
-        st.write("**Foco:** Core")
-        st.image("https://images.tcdn.com.br/img/editor/up/852683/Prancha.gif", width=320)
+        st.markdown('<div class="badge-card">⚡ Séries: 3x 45 segundos | Foco: Core</div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -168,9 +163,7 @@ elif dia_escolhido == "Sexta-feira":
     st.header("🍑 Sexta-feira: Posteriores e Glúteos")
     
     with st.expander("🏋️ 1. Stiff com Barra"):
-        st.write("**Séries:** 4x 10 reps")
-        st.write("**Foco:** Posterior e Glúteos")
-        st.image("https://images.tcdn.com.br/img/editor/up/852683/Stiff.gif", width=320)
+        st.markdown('<div class="badge-card">⚡ Séries: 4x 10 reps | Foco: Posterior e Glúteos</div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -180,9 +173,7 @@ elif dia_escolhido == "Sexta-feira":
         """, unsafe_allow_html=True)
         
     with st.expander("🔥 2. Cadeira Flexora"):
-        st.write("**Séries:** 3x 12 reps")
-        st.write("**Foco:** Posterior de coxa")
-        st.image("https://images.tcdn.com.br/img/editor/up/852683/CadeiraFlexora.gif", width=320)
+        st.markdown('<div class="badge-card">⚡ Séries: 3x 12 reps | Foco: Posterior de coxa</div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -195,9 +186,7 @@ elif dia_escolhido == "Sábado":
     st.header("⚡ Sábado: Full Body / HIIT")
     
     with st.expander("🏃 1. Burpees"):
-        st.write("**Séries:** 4x 45 segundos")
-        st.write("**Foco:** Condicionamento")
-        st.image("https://images.tcdn.com.br/img/editor/up/852683/Burpee.gif", width=320)
+        st.markdown('<div class="badge-card">⚡ Séries: 4x 45 segundos | Foco: Condicionamento</div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -207,9 +196,7 @@ elif dia_escolhido == "Sábado":
         """, unsafe_allow_html=True)
         
     with st.expander("🔥 2. Pular Corda"):
-        st.write("**Séries:** 4x 1 minuto")
-        st.write("**Foco:** Resistência")
-        st.image("https://images.tcdn.com.br/img/editor/up/852683/PularCorda.gif", width=320)
+        st.markdown('<div class="badge-card">⚡ Séries: 4x 1 minuto | Foco: Resistência</div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -222,9 +209,7 @@ elif dia_escolhido == "Domingo":
     st.header("🌿 Domingo: Recuperação e Mobilidade")
     
     with st.expander("🧘 1. Alongamento Global"):
-        st.write("**Duração:** 15-20 minutos")
-        st.write("**Foco:** Soltura muscular")
-        st.image("https://images.tcdn.com.br/img/editor/up/852683/Alongamento.gif", width=320)
+        st.markdown('<div class="badge-card">⚡ Duração: 15-20 minutos | Foco: Soltura muscular</div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
@@ -234,9 +219,7 @@ elif dia_escolhido == "Domingo":
         """, unsafe_allow_html=True)
         
     with st.expander("🚶 2. Caminhada Leve"):
-        st.write("**Duração:** 30 minutos")
-        st.write("**Foco:** Descanso ativo")
-        st.image("https://images.tcdn.com.br/img/editor/up/852683/Caminhada.gif", width=320)
+        st.markdown('<div class="badge-card">⚡ Duração: 30 minutos | Foco: Descanso ativo</div>', unsafe_allow_html=True)
         st.markdown("""
             <div class="box-exercicio">
                 <h4>🎯 Execução</h4>
